@@ -1,7 +1,7 @@
 import {calculatePayslip, Salary} from "./payroll";
 
 describe("a 16 year old apprentice with a monthly salary of 700 should not have any payslip deducations", () => {
-    test("no deducations", () => {
+    test("no deduction", () => {
         // Arrange
 
         const today = new Date()
@@ -25,7 +25,7 @@ describe("a 16 year old apprentice with a monthly salary of 700 should not have 
 
 describe("a 18 year old apprentice with a monthly salary of 1200 should have AHV, IV, EO, ALV and NBU deducations", () => {
 
-    test("five deducations", () => {
+    test("five deduction", () => {
         // Arrange
 
         const today = new Date()
@@ -52,7 +52,7 @@ describe("a 18 year old apprentice with a monthly salary of 1200 should have AHV
 
 describe("a 21 year old employee with a monthly salary of 5900 should have AHV, IV, EO, ALV, NBU and PK deducations", () => {
 
-    test("6 deducations", () => {
+    test("6 deduction", () => {
         // Arrange
 
         const today = new Date()
